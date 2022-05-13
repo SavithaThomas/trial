@@ -8,23 +8,25 @@
     <title>Document</title>
 </head>
 <body>
+<div class="container">
 <div class="container1" >
 <h2 class="lbl">Application Form</h2>
 <form name="myform">
-  <label for="fname">First name: <class="lbl" > </label><br>
+  <label for="fname" class="lbl">First name: <class="lbl" > </label>
   <input type="text" class="frm1" id="fname" name="fname" selected  required><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" class="frm1" id="lname" name="lname" ><br>
-  <label for="PhoneNo:">Phone No:</label><br>
+  <label for="lname">Last name:</label>
+  <input type="text" class="frm1" id="lname" name="lname"><br>
+  <label for="PhoneNo:">Phone No:</label>
   <input type="text" class="frm1" id="pno" name="pno" ><br>
-  <label for="Email:">Email:</label><br>
+  <label for="Email">Email:</label>
   <input type="email" class="frm1" id="email" name="email" ><br>
-  <label for="pwd">Password:</label><br>
+  <label for="pwd">Password:</label>
   <input type="password" class="frm1" id="pwd" name="pwd" required>
-  <input type="submit" class="sbm" value="Submit" onclick="msg()">
+  <input type="submit" class="sbm" value="Submit" onclick="validation()">
   <input type="reset" class="sbm" onclick="msg1()">
 </form>
 </div> 
+</div>
 <script src="./form.js"></script>
 </body>
 </html>
