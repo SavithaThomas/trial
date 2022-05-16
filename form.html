@@ -9,21 +9,26 @@
 </head>
 <body>
 <div class="container">
+
 <div class="container1" >
 <h2 class="lbl">Application Form</h2>
 <form name="myform">
-  <label for="fname" class="lbl">First name: <class="lbl" > </label>
-  <input type="text" class="frm1" id="fname" name="fname" selected  required><br>
-  <label for="lname">Last name:</label>
-  <input type="text" class="frm1" id="lname" name="lname"><br>
-  <label for="PhoneNo:">Phone No:</label>
-  <input type="text" class="frm1" id="pno" name="pno" ><br>
-  <label for="Email">Email:</label>
-  <input type="email" class="frm1" id="email" name="email" ><br>
-  <label for="pwd">Password:</label>
-  <input type="password" class="frm1" id="pwd" name="pwd" required>
-  <input type="submit" class="sbm" value="Submit" onclick="validation()">
-  <input type="reset" class="sbm" onclick="msg1()">
+  <div class="bbox">
+  <!-- <label for="fname" class="lbl">First name: <class="lbl" > </label> -->
+  <input type="text" class="frm1" id="fname" name="fname" placeholder="First name:" oninput="fnamecheck()" onblur="fnlcheck()" pattern="[A-Za-z]+" ><br>
+  <!-- <label for="lname" class="lbl">Last name:</label> -->
+  <input type="text" class="frm1" id="lname" name="lname" placeholder="Last name:" oninput="lnamecheck()" onblur="lnlcheck()" pattern="[A-Za-z]+" ><br>
+  <!-- <label for="PhoneNo:" class="lbl">Phone No:</label> -->
+  <input type="number"  class="frm1" id="pno" name="pno"  placeholder="Phone No:" onblur="pnolcheck()" ><br>
+  <!-- <label for="Email" class="lbl">Email:</label> -->
+  <input type="email" class="frm1" id="email" name="email" placeholder="Email:" onblur="emailcheck()" ><br>
+  <!-- <label for="pwd" class="lbl">Password:</label> -->
+  <input type="password" class="frm1" id="pwd" name="pwd" placeholder="Password:"  onblur="passcheck()"><br>
+  <input type="submit" class="sbm " value="Submit" onclick=""  onclick="validation()">
+  <input type="Reset" class="sbm sbm1" onclick="msg1()">
+  <p id="demo"></p>
+ 
+</div>
 </form>
 </div> 
 </div>
